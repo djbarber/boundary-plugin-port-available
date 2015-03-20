@@ -1,0 +1,23 @@
+{
+        "name": "boundary-plugin-port-available",
+        "version": "0.1.0",
+        "private": true,
+        "description": "Checks to see if a list of ports are open against a provided IP",
+        "main": "ports.js",
+        "devDependencies": {},
+        "repository": {
+        "type": "git",
+        "url": "https://github.com/djbarber/boundary-plugin-port-available"
+        },
+        "keywords": [
+                "boundary",
+                "port",
+                "available"
+        ],
+        "author": "dan.barber@avid.com",
+        "license": "Apache v2",
+        "bugs": {
+                "url": "https://github.com/djbarber/boundary-plugin-port-available/issues"
+        },
+        "engine": "node >= 0.10.32"
+}

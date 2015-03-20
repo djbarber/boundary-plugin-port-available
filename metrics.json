@@ -1,0 +1,14 @@
+{
+    "result": [
+        {
+            "defaultAggregate": "MAX",
+            "defaultResolutionMS": 0,
+            "description": "Port Open",
+            "displayName": "Port Open",
+            "displayNameShort": "Port Open",
+            "isDisabled": 0,
+            "name": "BOUNDARY_PORT_OPEN",
+            "unit": "number"
+        }
+    ]
+}
