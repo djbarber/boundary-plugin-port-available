@@ -1,0 +1,33 @@
+{
+    "description" : "Checks that a list of ports are open on the host",
+    "icon" : "icon.png",
+    "command" : "node ports.js $(pollInterval) $(ports) $(ip)",
+    "postExtract" : "npm install",
+    "ignore" : "node_modules",
+    "metrics" : ["BOUNDARY_PORT_OPEN"],
+    "paramSchema" : [
+	{
+            "title": "Poll Interval",
+            "name": "pollInterval",
+            "description": "The Poll Interval to call the command in milliseconds. Defaults to 1000 milliseconds",
+            "type": "string",
+            "default": 1000,
+            "required": false
+        },
+	{
+            "title" : "ports",
+            "description" : "ports to check that are running",
+            "type" : "array",
+            "items" : {
+                "type" : "string"
+            }
+        },
+	{
+	    "title" : "IP",
+	    "name" : "ip",
+	    "description" : "ip to check against",
+	    "type" : "string",
+	    "default" : "localhost",
+	}
+    ]
+}
